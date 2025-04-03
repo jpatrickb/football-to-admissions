@@ -53,12 +53,7 @@ Will investing in a winning football team
 ## Bayesian Hierarchical Model
 ```mermaid
 graph
-    A@{ shape: circle, label: "*Rain*"}
-    B@{ shape: circle, label: "Traffic"}
-    C@{ shape: circle, label: "Accident"}
-
-    A --> B
-    B --> C
+    
 
 ```
 
