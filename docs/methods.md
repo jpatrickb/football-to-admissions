@@ -1,0 +1,27 @@
+---
+title: Methods
+---
+
+Overview
+- Outcome focus: admissions-related outcomes (enrollment, applicants when available) and composition (race and gender proportions), plus higher-caliber proxies (ACT/SAT, retention, completion).
+- Primary exposure: football team performance measured as seasonal win–loss ratio. This normalizes across teams with different numbers of games.
+- Covariates: expenses, tuition (in/out of state where available), and region.
+- Models: XGBoost Regressors fit separately for each target.
+
+Why gradient boosting and SHAP
+- Pair plots did not reveal strong linear or polynomial relationships, reducing the appeal of OLS for inference.
+- XGBoost flexibly learns nonlinearities and interactions.
+- SHAP values allow us to quantify the marginal contribution of win–loss ratio (and other features) to each prediction and summarize distributions of effects across schools and years.
+
+Clustering strategy
+- We explored two clustering approaches: by school type and by cost (tuition + living expenses).
+- Clustering by school type did not materially change conclusions.
+- Cost-based clusters did: in high-cost institutions, the effect of win rate on demographics is much smaller; we report results by cost tiers where relevant.
+
+Representative diagnostic figure
+![Pair plots](assets/img/pair_plots.png)
+
+Notes
+- SHAP interpretations reflect association, not causation. Reverse causality (admissions ↔ performance) likely exists.
+- Enrollment can be capacity-constrained; applicant counts would more directly capture attraction effects, but these data were insufficient.
+

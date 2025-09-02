@@ -1,0 +1,5 @@
+title: Football Performance and Admissions
+description: Evidence-focused report on how football win rates relate to enrollment, diversity, and student caliber, using XGBoost and SHAP.
+theme: jekyll-theme-cayman
+markdown: kramdown
+
