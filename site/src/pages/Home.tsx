@@ -6,8 +6,8 @@ export default function Home() {
       <div className="card" style={{ marginBottom: 16 }}>
         <h1 style={{ marginTop: 0 }}>Football Performance and Admissions</h1>
         <p>
-          Findings-first summary of how NCAA football performance relates to university admissions outcomes
-          (BYU Statistics Case Competition 2025).
+          This project  contains a findings-first summary of how NCAA football performance relates to university admissions outcomes
+          (winning presentation of the 2025 BYU Statistics Case Competition).
         </p>
       </div>
 
